@@ -4,7 +4,14 @@
   "description": "A template repository for an Amazon Web Service (AWS), PostgreSQL, NodeJS with Typescript web stack.",
   "main": "javascript/index.js",
   "scripts": {
-    "start": "node javascript/index.js"
+    "clean-javascript": "rimraf ./javascript/*",
+    "clean-typescript-build": "rimraf ./tsconfig.incremental.json",
+    "clean": "npm run clean-javascript && npm run clean-typescript-build",
+    "build-typescript": "npx tsc",
+    "build": "npm run build-typescript",
+    "start": "node javascript/index.js",
+    "build-start": "npm run build && npm run start",
+    "clean-start": "npm run clean && npm run build && npm run start"
   },
   "repository": {
     "type": "git",
@@ -18,6 +25,9 @@
   },
   "homepage": "https://github.com/AnthonyMonterrosa/aws-postgres-node-stack#readme",
   "devDependencies": {
-    "rimraf": "^3.0.2"
+    "@types/node": "^14.14.7",
+    "rimraf": "^3.0.2",
+    "ts-node": "^9.0.0",
+    "typescript": "^4.0.5"
   }
 }

@@ -1,0 +1,21 @@
+{
+  "include": ["typescript/**.ts"],
+  "exclude": ["node_modules", "javascript"],
+  "compileOnSave": true,
+  "compilerOptions": {
+    "charset": "utf-8",
+    "incremental": true,
+    "tsBuildInfoFile": "tsconfig.incremental.json",
+    "module": "esnext",
+    "moduleResolution": "node",
+    "lib": ["esnext"],
+    "skipLibCheck": true,
+    "outDir": "javascript",
+    "pretty": true,
+    "target": "es5",
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "alwaysStrict": true,
+    "sourceMap": true
+  }
+}
