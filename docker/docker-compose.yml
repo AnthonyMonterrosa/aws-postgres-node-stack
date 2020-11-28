@@ -1,0 +1,13 @@
+version: '3'
+services:
+  database:
+    image: 'postgres:12.0-alpine'
+    environment: 
+      POSTGRES_PASSWORD: docker
+      POSTGRES_USER: postgres
+      POSTGRES_DB: docker-example
+    ports:
+      - "5430:5430"
+    command: -p 5430
+    volumes:
+      - ../data:/var/lib/postgresql/data

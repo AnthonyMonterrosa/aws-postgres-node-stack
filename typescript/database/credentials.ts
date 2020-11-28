@@ -1,6 +1,6 @@
 export interface Credentials {
 	username: string,
 	password: string,
-	server: string,
+	host: string,
 	database: string
 }

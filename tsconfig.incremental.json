@@ -217,8 +217,8 @@
         "affectsGlobalScope": false
       },
       "./typescript/database/credentials.ts": {
-        "version": "9391e5980d8563c6681749c52c20c7b04c598e5078e38e1700884be766b07ce4",
-        "signature": "d1c42d86bb4fec914ef9480aa849907b57bfc92e05962f58ec18fe4d96bfb35b",
+        "version": "b505e330e037dea55a24ac501d35b7d7b2dd25bed83f7d88ff7f5c1f0fdfe69a",
+        "signature": "2261db687bad37ca7377fd6dd66e9408af69e13710e95e42729739f57500652d",
         "affectsGlobalScope": false
       },
       "./typescript/database/index.ts": {
@@ -227,8 +227,8 @@
         "affectsGlobalScope": false
       },
       "./typescript/database/utility/build-connection-string.ts": {
-        "version": "e558af89f56ca0aff0bdc91f0245b811764de90304e314f8016452a0d404be15",
-        "signature": "68b6de836e5baf902a9e0e142676d4abf86bd2209d71c5536bef6edba0520c14",
+        "version": "feaac5718582e87c1b47e9edb5de3238579d832c3697847ef334d7d5c5355b61",
+        "signature": "71e3a432514c6866284d86e43153965160456ffaefc2959ee64c257e058c3f8f",
         "affectsGlobalScope": false
       },
       "./typescript/database/utility/index.ts": {
@@ -237,7 +237,7 @@
         "affectsGlobalScope": false
       },
       "./typescript/index.ts": {
-        "version": "1369dcc6d955e336d47199323b7bda70a75b17e0eeaee543eb5f2569779eddc6",
+        "version": "e5169f33345097edd9a183c9de4a336a7b5ed7f571ccb3cb781ee8cc29a55910",
         "signature": "8e609bb71c20b858c77f0e9f90bb1319db8477b13f9f965f1a1e18524bf50881",
         "affectsGlobalScope": false
       },

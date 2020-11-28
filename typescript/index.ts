@@ -10,17 +10,17 @@ const options: PostgreSQL.Options<null> = {
 }
 
 const credentials: Credentials = {
-	server: 'localhost',
-	database: 'testdatabase',
+	host: 'localhost',
+	database: 'docker-example',
 	username: 'postgres',
-	password: ' '
+	password: 'docker',
 }
 
-const sql: PostgreSQL.Sql<null> = PostgreSQL(BuildConnectionString(credentials), {...options})
+const sql: PostgreSQL.Sql<null> = PostgreSQL(BuildConnectionString(credentials), {...options, port: 5430})
 
 const Main = async () => {
 	return await sql`
-		select * from testtable
+		select * from "docker table"
 	`
 }
 
