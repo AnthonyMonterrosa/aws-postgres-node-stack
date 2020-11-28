@@ -9,7 +9,7 @@
     "clean": "npm run clean-javascript && npm run clean-typescript-build",
     "build-typescript": "npx tsc",
     "build": "npm run build-typescript",
-    "start": "node javascript/index.js",
+    "start": "node --es-module-specifier-resolution=node javascript/index.js",
     "build-start": "npm run build && npm run start",
     "clean-start": "npm run clean && npm run build && npm run start"
   },
@@ -26,8 +26,10 @@
   "homepage": "https://github.com/AnthonyMonterrosa/aws-postgres-node-stack#readme",
   "devDependencies": {
     "@types/node": "^14.14.7",
+    "postgres": "^2.0.0-beta.2",
     "rimraf": "^3.0.2",
     "ts-node": "^9.0.0",
-    "typescript": "^4.0.5"
-  }
+    "typescript": "^4.1.2"
+  },
+  "type": "module"
 }

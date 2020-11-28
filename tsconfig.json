@@ -3,6 +3,7 @@
   "exclude": ["node_modules", "javascript"],
   "compileOnSave": true,
   "compilerOptions": {
+    "allowSyntheticDefaultImports": true,
     "charset": "utf-8",
     "incremental": true,
     "tsBuildInfoFile": "tsconfig.incremental.json",
@@ -12,7 +13,7 @@
     "skipLibCheck": true,
     "outDir": "javascript",
     "pretty": true,
-    "target": "es5",
+    "target": "es2018",
     "experimentalDecorators": true,
     "emitDecoratorMetadata": true,
     "alwaysStrict": true,
