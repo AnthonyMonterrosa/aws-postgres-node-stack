@@ -4,6 +4,7 @@
   "description": "A template repository for an Amazon Web Service (AWS), PostgreSQL, NodeJS with Typescript web stack.",
   "main": "javascript/main.js",
   "scripts": {
+    "configure-git": "git config core.hooksPath ./scripts/hooks",
     "clean-javascript": "rimraf ./javascript/*",
     "clean-typescript-build": "rimraf ./tsconfig.incremental.json",
     "clean": "npm run clean-javascript && npm run clean-typescript-build",
@@ -15,7 +16,8 @@
     "docker-shutdown": "docker-compose -f ./docker/docker-compose.yml down",
     "start": "node --es-module-specifier-resolution=node javascript/main.js",
     "build-start": "npm run build && npm run docker-startup && npm run start",
-    "clean-start": "npm run clean && npm run build-start"
+    "clean-start": "npm run clean && npm run build-start",
+    "postinstall": "npm run configure-git"
   },
   "repository": {
     "type": "git",
