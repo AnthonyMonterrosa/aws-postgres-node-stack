@@ -515,6 +515,11 @@
         "version": "f9b601dd4786581b6a38e7c20e57d8ec050bfed2fa12502ff80ed45229f19e78",
         "signature": "8e609bb71c20b858c77f0e9f90bb1319db8477b13f9f965f1a1e18524bf50881",
         "affectsGlobalScope": false
+      },
+      "./node_modules/@types/json-schema/index.d.ts": {
+        "version": "b2be568d8ce95fcb26eebd04c035d94825655fdf689bf67d799f5ff8cbbb1024",
+        "signature": "b2be568d8ce95fcb26eebd04c035d94825655fdf689bf67d799f5ff8cbbb1024",
+        "affectsGlobalScope": false
       }
     },
     "options": {
@@ -951,6 +956,7 @@
       "./node_modules/@types/connect/index.d.ts",
       "./node_modules/@types/express-serve-static-core/index.d.ts",
       "./node_modules/@types/express/index.d.ts",
+      "./node_modules/@types/json-schema/index.d.ts",
       "./node_modules/@types/mime/index.d.ts",
       "./node_modules/@types/node/assert.d.ts",
       "./node_modules/@types/node/async_hooks.d.ts",

@@ -1,6 +1,6 @@
 import postgres from 'postgres';
 import express  from 'express';
-import { BuildConnectionString } from './database/utility'
+import { BuildConnectionString } from './database/utility';
 
 ( async () => {
 
@@ -17,32 +17,32 @@ import { BuildConnectionString } from './database/utility'
 			connect_timeout: 30,
 			connection: 
 			{
-				application_name: "node-express.js"
+				application_name: 'node-express.js'
 			},
 			port: 5430
 		} 
-	)
+	);
 
 	const response = await sql`
 		select * from "docker table"
-	`
+	`;
 
-	await sql.end({ timeout: 3 })
+	await sql.end({ timeout: 3 });
 
-	response.forEach( row => console.log( row ) )
+	response.forEach( row => console.log( row ) );
 
-	const app = express()
+	const app = express();
  
 	app.get('/', (request, response) => 
 	{
-  	response.send('Hello World')
-	} )
+		response.send('Hello World');
+	} );
  
-	app.listen(3000)
+	app.listen(3000);
 } )()
 	.catch( reason => 
 	{
-		console.log( "main errored with the following exception:" )
-		console.log( reason )
-		process.exit(1)
-	} )
+		console.log( 'main errored with the following exception:' );
+		console.log( reason );
+		process.exit(1);
+	} );

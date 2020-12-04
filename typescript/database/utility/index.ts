@@ -1,1 +1,1 @@
-export { BuildConnectionString } from './build-connection-string'
+export { BuildConnectionString } from './build-connection-string';
