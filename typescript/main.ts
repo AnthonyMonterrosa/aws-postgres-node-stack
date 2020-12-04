@@ -1,9 +1,9 @@
 import postgres from 'postgres';
 import express  from 'express';
-import { BuildConnectionString } from './database/utility';
+import { Database } from './database';
 
 const sql: postgres.Sql<null> = postgres(
-	BuildConnectionString(
+	Database.Utility.BuildConnectionString(
 		{ 	
 			host: 'localhost',
 			database: 'docker-example',
@@ -37,6 +37,8 @@ const sql: postgres.Sql<null> = postgres(
 	} );
  
 	app.listen( 3000 );
+
+	process.exit( 0 );
 } )()
 	.catch( reason => 
 	{

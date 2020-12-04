@@ -1,1 +1,1 @@
-export { Credentials } from './credentials';
+export * as Database from './namespace';

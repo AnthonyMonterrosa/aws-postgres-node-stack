@@ -502,17 +502,32 @@
         "affectsGlobalScope": false
       },
       "./typescript/database/utility/build-connection-string.ts": {
-        "version": "248356ac561170cf6226d2f6d047aad33cc510f59b94d68ab74611ae19916868",
+        "version": "796828f88bd21665ec80385a37726ee2422ecf5e4bdba3b811fc770234e78bc7",
         "signature": "71e3a432514c6866284d86e43153965160456ffaefc2959ee64c257e058c3f8f",
         "affectsGlobalScope": false
       },
+      "./typescript/database/utility/namespace/index.ts": {
+        "version": "1072ee8630187810740501642ec803bde37c437c2de627ce81426e9bcc608418",
+        "signature": "2860160c4ed09a644e5985c5b6df31c19ff1ec1b07a53518dedadd4a69edf318",
+        "affectsGlobalScope": false
+      },
       "./typescript/database/utility/index.ts": {
-        "version": "732dcf92bce5869e361743d5c21f2b9588bd235be915d0d7951417698c1d65f4",
-        "signature": "32761ba2fb6793d32c3e254c0162e44315db7e88874caa6e46b7b813eaaf35a6",
+        "version": "e895e907d20956f78144e192793c1adc94df86a6b69e0cfb107dfb73dd44dad6",
+        "signature": "75fd547f8f7978fc331dd889467257886ef177a674bfe7fea90ef80430db44bc",
+        "affectsGlobalScope": false
+      },
+      "./typescript/database/namespace/index.ts": {
+        "version": "d49a35a4d9dc72c3edd67d1780def07025787ac76bc6837387cad1a84ae8ee0b",
+        "signature": "d924bd5df8c932710b2adeca9d7488a906a1050a5b47c66c5ba7c15e841adcb5",
+        "affectsGlobalScope": false
+      },
+      "./typescript/database/index.ts": {
+        "version": "d3295a82ea2dabcc9bf451e572b21b270b422bafb9dfff5d2de5789680b8e16d",
+        "signature": "3ad2beb45b294ff886f38045137e23c3dff0f0531318fc7cea028265b671a2c1",
         "affectsGlobalScope": false
       },
       "./typescript/main.ts": {
-        "version": "dc9363286dfe2e09f0e9d1228877cfc9bf871f0195d1d714489e343888b32794",
+        "version": "f52732ef7b2ad7ae7606e7c419a20b156b22fb9dc5973c5ace2ee026ee1153a0",
         "signature": "8e609bb71c20b858c77f0e9f90bb1319db8477b13f9f965f1a1e18524bf50881",
         "affectsGlobalScope": false
       },
@@ -737,16 +752,26 @@
         "./node_modules/@types/node/http.d.ts",
         "./node_modules/@types/node/index.d.ts"
       ],
+      "./typescript/database/index.ts": [
+        "./typescript/database/namespace/index.ts"
+      ],
+      "./typescript/database/namespace/index.ts": [
+        "./typescript/database/credentials.ts",
+        "./typescript/database/utility/index.ts"
+      ],
       "./typescript/database/utility/build-connection-string.ts": [
         "./typescript/database/credentials.ts"
       ],
       "./typescript/database/utility/index.ts": [
+        "./typescript/database/utility/namespace/index.ts"
+      ],
+      "./typescript/database/utility/namespace/index.ts": [
         "./typescript/database/utility/build-connection-string.ts"
       ],
       "./typescript/main.ts": [
         "./node_modules/@types/express/index.d.ts",
         "./node_modules/postgres/types/index.d.ts",
-        "./typescript/database/utility/index.ts"
+        "./typescript/database/index.ts"
       ]
     },
     "exportedModulesMap": {
@@ -944,10 +969,20 @@
         "./node_modules/@types/node/http.d.ts",
         "./node_modules/@types/node/index.d.ts"
       ],
+      "./typescript/database/index.ts": [
+        "./typescript/database/namespace/index.ts"
+      ],
+      "./typescript/database/namespace/index.ts": [
+        "./typescript/database/credentials.ts",
+        "./typescript/database/utility/index.ts"
+      ],
       "./typescript/database/utility/build-connection-string.ts": [
         "./typescript/database/credentials.ts"
       ],
       "./typescript/database/utility/index.ts": [
+        "./typescript/database/utility/namespace/index.ts"
+      ],
+      "./typescript/database/utility/namespace/index.ts": [
         "./typescript/database/utility/build-connection-string.ts"
       ]
     },
@@ -1052,8 +1087,11 @@
       "./node_modules/typescript/lib/lib.esnext.string.d.ts",
       "./node_modules/typescript/lib/lib.esnext.weakref.d.ts",
       "./typescript/database/credentials.ts",
+      "./typescript/database/index.ts",
+      "./typescript/database/namespace/index.ts",
       "./typescript/database/utility/build-connection-string.ts",
       "./typescript/database/utility/index.ts",
+      "./typescript/database/utility/namespace/index.ts",
       "./typescript/index.ts",
       "./typescript/main.ts"
     ]

@@ -1,1 +1,1 @@
-export { BuildConnectionString } from './build-connection-string';
+export * as Utility from './namespace';
