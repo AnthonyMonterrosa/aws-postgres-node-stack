@@ -31,18 +31,18 @@ const sql: postgres.Sql<null> = postgres(
 
 	const app = express();
  
-	app.get('/', (request, response) => 
+	app.get( '/', ( request, response ) => 
 	{
-		response.send('Hello World');
+		response.send( 'Hello World' );
 	} );
  
-	app.listen(3000);
+	app.listen( 3000 );
 } )()
 	.catch( reason => 
 	{
 		console.log( 'Error: main errored with the following exception:' );
 		console.log( reason );
-		process.exit(1);
+		process.exit( 1 );
 	} )
 	.finally( () => {
 		sql.end( { timeout: 0 } );
