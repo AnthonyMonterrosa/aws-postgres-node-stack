@@ -211,29 +211,14 @@
         "signature": "1e61418f41d404e744b6536af9f8c6f6674dd4d54c12335cd0c4f7eded69cf3f",
         "affectsGlobalScope": true
       },
+      "./typescript/index.ts": {
+        "version": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "signature": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "affectsGlobalScope": false
+      },
       "./node_modules/postgres/types/index.d.ts": {
         "version": "90919b8df2637599a00bb37eb6f3c123b38537e9921fa196e0f7d89bea7003a4",
         "signature": "90919b8df2637599a00bb37eb6f3c123b38537e9921fa196e0f7d89bea7003a4",
-        "affectsGlobalScope": false
-      },
-      "./typescript/database/credentials.ts": {
-        "version": "b505e330e037dea55a24ac501d35b7d7b2dd25bed83f7d88ff7f5c1f0fdfe69a",
-        "signature": "2261db687bad37ca7377fd6dd66e9408af69e13710e95e42729739f57500652d",
-        "affectsGlobalScope": false
-      },
-      "./typescript/database/index.ts": {
-        "version": "10260a07669c66f759e91b0421e6b67b99e75590b9fe3825cbe3c2859598c2fe",
-        "signature": "24bd446e17a6ab59eab7b7b42bc0e996333e857a47dec01cdbe51cdf5c66e59b",
-        "affectsGlobalScope": false
-      },
-      "./typescript/database/utility/build-connection-string.ts": {
-        "version": "feaac5718582e87c1b47e9edb5de3238579d832c3697847ef334d7d5c5355b61",
-        "signature": "71e3a432514c6866284d86e43153965160456ffaefc2959ee64c257e058c3f8f",
-        "affectsGlobalScope": false
-      },
-      "./typescript/database/utility/index.ts": {
-        "version": "f7be8ca3692db7dfb6bffb101c5e376d93087996cb04c9ec4c73131296556528",
-        "signature": "32761ba2fb6793d32c3e254c0162e44315db7e88874caa6e46b7b813eaaf35a6",
         "affectsGlobalScope": false
       },
       "./node_modules/@types/node/globals.d.ts": {
@@ -511,8 +496,23 @@
         "signature": "924732dfbdfd120ee07cf733c7c65018f24ce9ddf06ed9ccf3cad8fdc2e33585",
         "affectsGlobalScope": false
       },
-      "./typescript/index.ts": {
-        "version": "d5e9612ff8d203cd1182e4311103ef6c4cc57a7b48d2fea12ce951b281bcdc60",
+      "./typescript/database/credentials.ts": {
+        "version": "b505e330e037dea55a24ac501d35b7d7b2dd25bed83f7d88ff7f5c1f0fdfe69a",
+        "signature": "2261db687bad37ca7377fd6dd66e9408af69e13710e95e42729739f57500652d",
+        "affectsGlobalScope": false
+      },
+      "./typescript/database/utility/build-connection-string.ts": {
+        "version": "feaac5718582e87c1b47e9edb5de3238579d832c3697847ef334d7d5c5355b61",
+        "signature": "71e3a432514c6866284d86e43153965160456ffaefc2959ee64c257e058c3f8f",
+        "affectsGlobalScope": false
+      },
+      "./typescript/database/utility/index.ts": {
+        "version": "f7be8ca3692db7dfb6bffb101c5e376d93087996cb04c9ec4c73131296556528",
+        "signature": "32761ba2fb6793d32c3e254c0162e44315db7e88874caa6e46b7b813eaaf35a6",
+        "affectsGlobalScope": false
+      },
+      "./typescript/main.ts": {
+        "version": "f9b601dd4786581b6a38e7c20e57d8ec050bfed2fa12502ff80ed45229f19e78",
         "signature": "8e609bb71c20b858c77f0e9f90bb1319db8477b13f9f965f1a1e18524bf50881",
         "affectsGlobalScope": false
       }
@@ -732,19 +732,15 @@
         "./node_modules/@types/node/http.d.ts",
         "./node_modules/@types/node/index.d.ts"
       ],
-      "./typescript/database/index.ts": [
-        "./typescript/database/credentials.ts"
-      ],
       "./typescript/database/utility/build-connection-string.ts": [
         "./typescript/database/credentials.ts"
       ],
       "./typescript/database/utility/index.ts": [
         "./typescript/database/utility/build-connection-string.ts"
       ],
-      "./typescript/index.ts": [
+      "./typescript/main.ts": [
         "./node_modules/@types/express/index.d.ts",
         "./node_modules/postgres/types/index.d.ts",
-        "./typescript/database/index.ts",
         "./typescript/database/utility/index.ts"
       ]
     },
@@ -943,9 +939,6 @@
         "./node_modules/@types/node/http.d.ts",
         "./node_modules/@types/node/index.d.ts"
       ],
-      "./typescript/database/index.ts": [
-        "./typescript/database/credentials.ts"
-      ],
       "./typescript/database/utility/build-connection-string.ts": [
         "./typescript/database/credentials.ts"
       ],
@@ -1053,10 +1046,10 @@
       "./node_modules/typescript/lib/lib.esnext.string.d.ts",
       "./node_modules/typescript/lib/lib.esnext.weakref.d.ts",
       "./typescript/database/credentials.ts",
-      "./typescript/database/index.ts",
       "./typescript/database/utility/build-connection-string.ts",
       "./typescript/database/utility/index.ts",
-      "./typescript/index.ts"
+      "./typescript/index.ts",
+      "./typescript/main.ts"
     ]
   },
   "version": "4.1.2"
