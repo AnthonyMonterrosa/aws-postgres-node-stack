@@ -1,6 +1,7 @@
 import PostgreSQL from 'postgres'
 import { Credentials } from './database'
 import { BuildConnectionString } from './database/utility'
+import express from 'express'
 
 const options: PostgreSQL.Options<null> = {
 	connect_timeout: 30,
@@ -34,4 +35,10 @@ Main()
 
 await sql.end({ timeout: 3 })
 
-process.exit(0)
+const app = express()
+ 
+app.get('/', (request, response) => {
+  response.send('Hello World')
+})
+ 
+app.listen(3000)
