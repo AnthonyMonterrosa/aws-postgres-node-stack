@@ -5,19 +5,24 @@
   "main": "javascript/main.js",
   "scripts": {
     "configure-git": "git config core.hooksPath ./scripts/hooks",
+    "configure-docker": "echo \"set --universal --export DOCKER_BUILDKIT 1\" | fish",
+    "configure-docker-compose": "echo \"set --universal --export COMPOSE_DOCKER_CLI_BUILD 1\" | fish",
+    "configure-docker-tools": "npm run configure-docker && npm run configure-docker-compose",
+    "configure-tools": "npm run configure-git && npm run configure-docker-tools",
     "clean-javascript": "rimraf ./javascript/*",
     "clean-typescript-build": "rimraf ./tsconfig.incremental.json",
     "clean": "npm run clean-javascript && npm run clean-typescript-build",
     "lint": "npx eslint \"typescript/**\"",
     "lint-and-fix": "npm run lint -- --fix",
+    "docker-build-node-express": "DOCKER_BUILDKIT=1 docker build --tag node-express --file ./docker/node-express.dockerfile .",
+    "docker-build-images": "npm run docker-build-node-express",
     "build-typescript": "npx tsc",
-    "build": "npm run build-typescript",
+    "build": "npm run build-typescript && npm run docker-build-images",
     "docker-startup": "docker-compose -f ./docker/docker-compose.yml up -d",
     "docker-shutdown": "docker-compose -f ./docker/docker-compose.yml down",
     "start": "node --es-module-specifier-resolution=node javascript/main.js",
     "build-start": "npm run build && npm run docker-startup && npm run start && npm run docker-shutdown",
-    "clean-start": "npm run clean && npm run build-start",
-    "postinstall": "npm run configure-git"
+    "clean-start": "npm run clean && npm run build-start"
   },
   "repository": {
     "type": "git",

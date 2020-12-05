@@ -507,22 +507,22 @@
         "affectsGlobalScope": false
       },
       "./typescript/database/utility/namespace/index.ts": {
-        "version": "1072ee8630187810740501642ec803bde37c437c2de627ce81426e9bcc608418",
+        "version": "718e5bbf65c300a0f2ddb9fdc3e0e971a7533fd31ae7cfc866acfba1c43c9e61",
         "signature": "2860160c4ed09a644e5985c5b6df31c19ff1ec1b07a53518dedadd4a69edf318",
         "affectsGlobalScope": false
       },
       "./typescript/database/utility/index.ts": {
-        "version": "e895e907d20956f78144e192793c1adc94df86a6b69e0cfb107dfb73dd44dad6",
+        "version": "2f7e233462c8da13ace7835c52f4aa28aa95f114ff363caa3bea5437c33dfd7e",
         "signature": "75fd547f8f7978fc331dd889467257886ef177a674bfe7fea90ef80430db44bc",
         "affectsGlobalScope": false
       },
       "./typescript/database/namespace/index.ts": {
-        "version": "d49a35a4d9dc72c3edd67d1780def07025787ac76bc6837387cad1a84ae8ee0b",
+        "version": "cea5f9d42802beb2f33efe89a2743e58c3d23b09ddb4e6826afb5db0c46eeb0e",
         "signature": "d924bd5df8c932710b2adeca9d7488a906a1050a5b47c66c5ba7c15e841adcb5",
         "affectsGlobalScope": false
       },
       "./typescript/database/index.ts": {
-        "version": "d3295a82ea2dabcc9bf451e572b21b270b422bafb9dfff5d2de5789680b8e16d",
+        "version": "4c34bcffea1d4f5e87914f7ef034f16378ee910788f77c0139702e64316dfe74",
         "signature": "3ad2beb45b294ff886f38045137e23c3dff0f0531318fc7cea028265b671a2c1",
         "affectsGlobalScope": false
       },

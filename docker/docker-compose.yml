@@ -10,4 +10,10 @@ services:
       - "5430:5430"
     command: -p 5430
     volumes:
-      - ../data:/var/lib/postgresql/data
+      - ./volumes/data:/var/lib/postgresql/data
+  node-express:
+    image: 'node-express:latest'
+    ports: 
+      - "3000:3000"
+    depends_on: 
+      - database
