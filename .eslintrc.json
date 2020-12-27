@@ -21,6 +21,13 @@
         "@typescript-eslint"
     ],
     "rules": {
+        "no-trailing-spaces": [
+            "error",
+            {
+                "skipBlankLines": false,
+                "ignoreComments": false
+            }
+        ],
         "space-in-parens": [
             "error",
             "always"
