@@ -1,3 +1,4 @@
+.vscode
 docker/volumes
 node_modules
 javascript

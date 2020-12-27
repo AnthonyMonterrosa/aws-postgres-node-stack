@@ -9,7 +9,7 @@
     "configure-docker-compose": "echo \"set --universal --export COMPOSE_DOCKER_CLI_BUILD 1\" | fish",
     "configure-docker-tools": "npm run configure-docker && npm run configure-docker-compose",
     "configure-tools": "npm run configure-git && npm run configure-docker-tools",
-    "clean-javascript": "rimraf ./javascript/*",
+    "clean-javascript": "npx rimraf ./javascript/*",
     "clean-typescript-build": "rimraf ./tsconfig.incremental.json",
     "clean": "npm run clean-javascript && npm run clean-typescript-build",
     "lint": "npx eslint \"typescript/**\"",
